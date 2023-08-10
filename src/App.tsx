@@ -47,6 +47,8 @@ function App() {
       setTotalPayment(payment.fullPayment);
       setMonthlyPayment(payment.monthlyPayment);
       setLoading(false);
+    } else {
+      alert("there was an error while calculating")
     }
   }, [loanAmount, deadline]);
 
